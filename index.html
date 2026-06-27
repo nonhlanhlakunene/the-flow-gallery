@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 2 CSS grid/flexbox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>The Flow Gallery</h1>
+  </header>
+
+  <main>
+    <!-- Inputs are hidden but functional -->
+    <input type="radio" name="category" id="All" hidden>
+    <input type="radio" name="category" id="Landscape" hidden>
+    <input type="radio" name="category" id="Portrait" hidden>
+    <input type="radio" name="category" id="Architecture" hidden>
+
+    <!-- filterButtons structure is preserved, labels still work -->
+    <div class="filterButtons">
+      <label for="All">All</label>
+      <label for="Landscape">Landscape</label>
+      <label for="Portrait">Portrait</label>
+      <label for="Architecture">Architecture</label>
+    </div>
+
+    <div class="gallery">
+      <div id="Landscape" class="card">
+        <div class="imageCard">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/180/018/original/istockphoto-1419410282-612x612.jpg?1778491938"
+            alt="Tall trees capturing the sun rays" />
+          <div class="overlay"><p>Tall trees capturing the sun rays</p></div>
+        </div>
+        <h5>Sunlight Through the Forest</h5>
+      </div>
+
+      <div id="Portrait" class="card">
+        <div class="imageCard">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/180/025/original/pexels-daniel-s-richard-2149882292-32715718.jpg?1778492989"
+            alt="Daniel S Richard" />
+          <div class="overlay">
+            <p>Daniel S Richard</p>
+          </div>
+        </div>
+
+        <h5>Boundaries of Identity</h5>
+      </div>
+
+      <div id="Architecture" class="card">
+        <div class="imageCard">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/180/022/original/istockphoto-2225405260-612x612.jpg?1778492710"
+            alt="The radiant London Cityscape" />
+          <div class="overlay">
+            <p>The radiant London Cityscape
+              </p>
+            </div>
+        </div>
+         <h5>London Cityscape</h5>
+      </div>
+
+      <div id="Landscape" class="card">
+        <div class="imageCard">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/180/019/original/istockphoto-1497694342-612x612_%281%29.jpg?1778492021"
+            alt="Forest in spring with bright rays" />
+          <div class="overlay">
+            <p>Forest in spring with bright rays</p></div>
+        </div>
+        <h5>Golden Valley Sunset</h5>
+      </div>
+
+
+      <div id="Portrait" class="card">
+        <div class="imageCard">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/180/027/original/pexels-upenderphotography-36951581.jpg?1778493143"
+            alt="A portrait of lady in bars" />
+          <div class="overlay">
+            <p>A portrait of lady in bars</p></div>
+        </div>
+        <h5>Silenced Echoes</h5>
+      </div>
+
+      <div id="Landscape" class="card">
+        <div class="imageCard">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/180/058/original/QBrtd2LEbMoDjrGdMvATtP.jpg?1778610221"
+            alt="A tree with pink leaves in a field" />
+          <div class="overlay">
+            <p>A tree with pink leaves in a field</p>
+          </div>
+        </div>
+        <h5>Cherry Blossom Tree</h5>
+      </div>
+
+      <div id="Architecture" class="card">
+        <div class="imageCard">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/180/021/original/istockphoto-539115110-612x612.jpg?1778492488"
+            alt="View of Collesum in Rome" />
+          <div class="overlay">
+            <p>View of Collesum in Rome</p>
+            </div>
+        </div>
+        <h5>Collesum in Rome</h5>
+      </div>
+
+
+      <div id="Architecture" class="card">
+        <div class="imageCard">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/180/023/original/istockphoto-2223095798-612x612.jpg?1778492794"
+            alt="Two people walking through a mordern lobby" />
+          <div class="overlay">
+            <p>Two people walking through a mordern lobby</p>
+          </div>
+        </div>
+         <h5>Modern Lobby</h5>
+      </div>
+
+       <div id="Portrait" class="card">
+        <div class="imageCard">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/180/026/original/pexels-cede-joey-2050570-28991537.jpg?1778493105"
+            alt="Cede Joey's portrait" />
+          <div class="overlay">
+            <p>Cede Joey's portrait</p>
+
+            </div>
+        </div>
+        <h5>The Present Absence</h5>
+      </div>
+
+      
+
+      <div id="Architecture" class="card">
+        <div class="imageCard">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/180/024/original/istockphoto-2254276454-612x612.jpg?1778492869"
+            alt="Aeriol view of the historical city of Toledo, in Spain" />
+          <div class="overlay">
+            <p>Aeriol view of the historical city of Toledo, in Spain
+              </p>
+            </div>
+        </div>
+
+        <h5>City of Toledo, in Spain</h5>
+      </div>
+
+
+      <div id="Landscape" class="card">
+        <div class="imageCard">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/180/020/original/istockphoto-483724081-612x612.jpg?1778492425"
+            alt="A stream surrounded by trees" />
+          <div class="overlay">
+            <p>A stream surrounded by trees</p>
+
+            </div>
+        </div>
+        <h5>Forested Stream</h5>
+      </div>
+
+      <div id="Portrait" class="card">
+        <div class="imageCard">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/180/028/original/pexels-guilherme-da-silva-2154550802-33281834.jpg?1778493185"
+            alt="Guilherme da Silva" />
+          <div class="overlay"><p>Guilherme da Silva</p></div>
+        </div>
+        <h5>The Weight of Years</h5>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
