@@ -1,0 +1,136 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: #f5f5f5d6;
+}
+
+#All:checked ~ .gallery .card {
+  display: grid;
+}
+
+#Landscape:checked ~ div label[for="Landscape"] {
+  background-color: rgb(105, 105, 212);
+}
+
+#All:checked ~ div label[for="All"] {
+  background-color: rgb(105, 105, 212);
+}
+
+#Portrait:checked ~ div label[for="Portrait"] {
+  background-color: rgb(105, 105, 212);
+}
+
+#Architecture:checked ~ div label[for="Architecture"] {
+  background-color: rgb(105, 105, 212);
+}
+
+#Landscape:checked ~ .gallery #Architecture {
+  /* display: block; */
+  display: none;
+}
+
+#Landscape:checked ~ .gallery #Portrait {
+  display: none;
+}
+
+#Portrait:checked ~ .gallery #Landscape {
+  display: none;
+}
+
+#Portrait:checked ~ .gallery #Architecture {
+  display: none;
+}
+
+#Architecture:checked ~ .gallery #Landscape {
+  display: none;
+}
+
+#Architecture:checked ~ .gallery #Portrait {
+  display: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 40px;
+  justify-content: center;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.3s ease;
+
+  position:relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity:0;
+    transition: opacity 0.3s ease;
+
+}
+
+.card:hover .overlay {
+    opacity:1;
+}
+
+.card:hover {
+  transform: translateY(-14px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 10px;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.filterButtons label {
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .gallery {
+    grid-template-columns: repeat(4, 300px);
+  }
+}
+
+img {
+  width: 100%;
+  height: 320px;
+}
